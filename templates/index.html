@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap link included for styling.  -->
+    <link rel="stylesheet" href="/static/app.css">
+  <title>Cupcakes</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class = "text-center display-3">Cupcakes</h1>
+
+        <ul id="cupcake-list">
+            
+            
+        </ul>
+
+    </div>
+    
+    <div class="container form" id="form">
+        <form action="">
+            <h2>Add A Cupcake</h2>
+            <div class="row justify-content-left">
+                <label for="flavor">Flavor     :</label>
+                <input type="text" placeholder="Flavor" name="flavor" id="flavor" required>
+            </div>
+            <div class="row justify-content-left">
+                <label for="size">Size         :</label>
+                <input type="text" name="size" id="size" placeholder="Size" required>                
+            </div>
+            <div class="row justify-content-left">
+                <label for="rating">Rating      :</label>
+                <input type="number" step= "0.1" name="rating" id="rating" placeholder="Rating" required>
+            </div>
+            <div class="row justify-content-left">
+                <label for="image">Image URL     :</label>
+                <input type="text" name="image" id="image" placeholder="Image URL">
+            </div>
+            <div class="row justify-content-left mt-3">
+                <button>Add Cupcake</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <!-- axios included  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jquery inluded! -->
+    <script src="static/app.js"></script>
+
+</body>
+</html>
